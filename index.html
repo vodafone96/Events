@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="utf-8"/>
+    <title> Events </title>
+    <meta name = "description" content = "Strona przedstawia kilka przykładów zdarzeń możliwiych do uzyskania na stronie"/>
+    <meta name = "keywords" content = "events, zdarzenia, event, zdarzenie, e "/>
+    <meta http-equiv="X-UA-Compatible" content = "IE-edge, chrome=1"/>
+    <link rel = "stylesheet" href = "style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/fontello.css"/>
+    <script src = "script.js" async></script> 
+</head>
+<body>
+    <div class = "ramka" id = "zwiekszanie">
+        <div id = "powiekszanie"> Tutaj będziemy zmieniać wielkość tekstu</div>
+        <br>
+        <button class = "buttons" id = 'plus'> + </button>
+        <button class = "buttons" id = 'minus'> - </button>
+        <button class = "buttons" id = 'Stop'> Stop </button>
+        <button class = "buttons" id = 'wznow'> Wznów </button>
+    </div>
+    <div class = "ramka" id = "przenoszenie">
+        <img id = "skuter" src = "img/skuter.png" width="200" height="200"/>
+        
+        <img id = "staruszka" src = "img/staruszka.png" width="200" height="200"/>
+        <span  id = "opis">Przeciągnij i upuść</span>
+        <img id = "fedora" src = "img/fedora.png" width="80" height="40"/>
+        <img id = "sowa" src = "img/sowa.png" width="150" height="150"/>
+
+    </div>
+    
+    <div class = "ramka" id = "dzwieki">
+
+        <div data-key = "65" class = "key">
+            <kbd> A </kbd>
+            <span class = "sound"> clap </span>
+        </div>
+        <div data-key="83" class = "key">
+            <kbd> S </kbd>
+            <span class = "sound"> hihat </span>
+        </div>
+        <div data-key="68" class = "key">
+            <kbd> D </kbd>
+            <span class = "sound"> kick </span>
+        </div>
+
+    </div>
+
+    <audio data-key="65" src = "sounds/clap.wav"></audio>
+    <audio data-key="83" src = "sounds/hihat.wav"></audio>
+    <audio data-key="68" src = "sounds/kick.wav"></audio>
+
+
+
+</html>
